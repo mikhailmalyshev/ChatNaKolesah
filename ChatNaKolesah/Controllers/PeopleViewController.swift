@@ -10,10 +10,16 @@ import UIKit
 
 class PeopleViewController: UIViewController {
     
+    let users = Bundle.main.decode([MUser].self, from: "users.json")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
         setupSearchBar()
+        
+        users.forEach { (user) in
+            print(user.username)
+        }
     }
     
     private func setupSearchBar() {
