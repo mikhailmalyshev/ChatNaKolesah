@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 extension UIViewController {
     
     func configure<T: SelfConfiguringCell, U: Hashable>(collectionView: UICollectionView, cellType: T.Type, with value: U, for indexPath: IndexPath) -> T {

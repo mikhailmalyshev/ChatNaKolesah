@@ -27,6 +27,9 @@
 		9755BC562528823C008C2C51 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9755BC552528823C008C2C51 /* LoginViewController.swift */; };
 		9755BC5825288E24008C2C51 /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9755BC5725288E24008C2C51 /* SetupProfileViewController.swift */; };
 		9755BC5A25289083008C2C51 /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9755BC5925289083008C2C51 /* AddPhotoView.swift */; };
+		9766D18525388FE8002BB49F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9766D18425388FE8002BB49F /* ProfileViewController.swift */; };
+		9766D18725389A5F002BB49F /* InsertableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9766D18625389A5F002BB49F /* InsertableTextField.swift */; };
+		9766D18925389E82002BB49F /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9766D18825389E82002BB49F /* UIView + Extension.swift */; };
 		976E7FAD2534B50500F70B47 /* activeChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 97C7F7492531F13C009300B2 /* activeChats.json */; };
 		976E7FAE2534B50500F70B47 /* waitingChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 97C7F74A2531F140009300B2 /* waitingChats.json */; };
 		976E7FAF2534B50500F70B47 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 97AC98B02534AD180052A6C1 /* users.json */; };
@@ -67,6 +70,9 @@
 		9755BC552528823C008C2C51 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9755BC5725288E24008C2C51 /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
 		9755BC5925289083008C2C51 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
+		9766D18425388FE8002BB49F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9766D18625389A5F002BB49F /* InsertableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertableTextField.swift; sourceTree = "<group>"; };
+		9766D18825389E82002BB49F /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 		977D5DDB25349EA900F43354 /* MChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChat.swift; sourceTree = "<group>"; };
 		97AC98B02534AD180052A6C1 /* users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		97AC98B12534ADF20052A6C1 /* Bundle + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle + Extension.swift"; sourceTree = "<group>"; };
@@ -137,10 +143,12 @@
 				9755BC47251F4C35008C2C51 /* Label + extension.swift */,
 				9755BC4F251F596E008C2C51 /* UIStackView + extension.swift */,
 				9755BC45251D3864008C2C51 /* UIColor + Extension.swift */,
+				9766D18625389A5F002BB49F /* InsertableTextField.swift */,
 				973BCC612537482700401F03 /* UIViewController + Extension.swift */,
 				97AD86F225289BA000654BF6 /* SegmentedControl + Extension.swift */,
 				9755BC43251D3786008C2C51 /* UIFont + Extension.swift */,
 				9755BC41251D3483008C2C51 /* UIButton + Extension.swift */,
+				9766D18825389E82002BB49F /* UIView + Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -192,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				97AD86F82528DC7600654BF6 /* MainTabBarController.swift */,
+				9766D18425388FE8002BB49F /* ProfileViewController.swift */,
 				97AD86F52528DBA400654BF6 /* ListViewController.swift */,
 				97AD86FA2528DCDC00654BF6 /* PeopleViewController.swift */,
 				97C7F74B2531F17E009300B2 /* SectionHeader */,
@@ -305,12 +314,14 @@
 				9755BC46251D3864008C2C51 /* UIColor + Extension.swift in Sources */,
 				97AC98B22534ADF20052A6C1 /* Bundle + Extension.swift in Sources */,
 				9755BC44251D3786008C2C51 /* UIFont + Extension.swift in Sources */,
+				9766D18725389A5F002BB49F /* InsertableTextField.swift in Sources */,
 				9755BC5825288E24008C2C51 /* SetupProfileViewController.swift in Sources */,
 				9755BC48251F4C35008C2C51 /* Label + extension.swift in Sources */,
 				97AD86FB2528DCDC00654BF6 /* PeopleViewController.swift in Sources */,
 				9755BC50251F596E008C2C51 /* UIStackView + extension.swift in Sources */,
 				9755BC42251D3483008C2C51 /* UIButton + Extension.swift in Sources */,
 				9755BC4E251F5239008C2C51 /* ButtonFromView.swift in Sources */,
+				9766D18525388FE8002BB49F /* ProfileViewController.swift in Sources */,
 				9755BC522523BCE3008C2C51 /* SignUpViewController.swift in Sources */,
 				97C7F7462531E6E3009300B2 /* SectionHeader.swift in Sources */,
 				9755BC35251D2CD5008C2C51 /* ChatNaKolesah.xcdatamodeld in Sources */,
@@ -323,6 +334,7 @@
 				9755BC2B251D2CD5008C2C51 /* AppDelegate.swift in Sources */,
 				97AD86F62528DBA400654BF6 /* ListViewController.swift in Sources */,
 				97C7F7412531DCE8009300B2 /* WaitingChatCell.swift in Sources */,
+				9766D18925389E82002BB49F /* UIView + Extension.swift in Sources */,
 				9755BC542523C013008C2C51 /* OneLineTextField.swift in Sources */,
 				97C7F73D2531C01B009300B2 /* ActiveChatCell.swift in Sources */,
 				9755BC2D251D2CD5008C2C51 /* SceneDelegate.swift in Sources */,
