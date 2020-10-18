@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -40,15 +40,20 @@
 		97AD86F62528DBA400654BF6 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD86F52528DBA400654BF6 /* ListViewController.swift */; };
 		97AD86F92528DC7600654BF6 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD86F82528DC7600654BF6 /* MainTabBarController.swift */; };
 		97AD86FB2528DCDC00654BF6 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD86FA2528DCDC00654BF6 /* PeopleViewController.swift */; };
+		97B3871B253C6B1B001F1C7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97B3871A253C6B1A001F1C7C /* GoogleService-Info.plist */; };
 		97C7F73D2531C01B009300B2 /* ActiveChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C7F73C2531C01B009300B2 /* ActiveChatCell.swift */; };
 		97C7F73F2531D610009300B2 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C7F73E2531D610009300B2 /* GradientView.swift */; };
 		97C7F7412531DCE8009300B2 /* WaitingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C7F7402531DCE8009300B2 /* WaitingChatCell.swift */; };
 		97C7F7432531DE95009300B2 /* SelfConfigurationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C7F7422531DE95009300B2 /* SelfConfigurationCell.swift */; };
 		97C7F7462531E6E3009300B2 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C7F7452531E6E3009300B2 /* SectionHeader.swift */; };
 		97C7F74D2531F247009300B2 /* MUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C7F74C2531F247009300B2 /* MUser.swift */; };
+		97C81C34253C7B4100380DA8 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C81C33253C7B4100380DA8 /* AuthService.swift */; };
+		CFEAE7C335AEABC42E599E94 /* Pods_ChatNaKolesah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18984C006D2B2E2FBF50E5F2 /* Pods_ChatNaKolesah.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18984C006D2B2E2FBF50E5F2 /* Pods_ChatNaKolesah.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatNaKolesah.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DAEB09C04CCDECAAC1E80FA /* Pods-ChatNaKolesah.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatNaKolesah.debug.xcconfig"; path = "Target Support Files/Pods-ChatNaKolesah/Pods-ChatNaKolesah.debug.xcconfig"; sourceTree = "<group>"; };
 		973BCC5F253745E700401F03 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		973BCC612537482700401F03 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
 		9755BC27251D2CD5008C2C51 /* ChatNaKolesah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatNaKolesah.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +87,7 @@
 		97AD86F52528DBA400654BF6 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		97AD86F82528DC7600654BF6 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		97AD86FA2528DCDC00654BF6 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		97B3871A253C6B1A001F1C7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		97C7F73C2531C01B009300B2 /* ActiveChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveChatCell.swift; sourceTree = "<group>"; };
 		97C7F73E2531D610009300B2 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		97C7F7402531DCE8009300B2 /* WaitingChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingChatCell.swift; sourceTree = "<group>"; };
@@ -90,6 +96,8 @@
 		97C7F7492531F13C009300B2 /* activeChats.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = activeChats.json; sourceTree = "<group>"; };
 		97C7F74A2531F140009300B2 /* waitingChats.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = waitingChats.json; sourceTree = "<group>"; };
 		97C7F74C2531F247009300B2 /* MUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUser.swift; sourceTree = "<group>"; };
+		97C81C33253C7B4100380DA8 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		AC2E7E8A76CE579DDCF28462 /* Pods-ChatNaKolesah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatNaKolesah.release.xcconfig"; path = "Target Support Files/Pods-ChatNaKolesah/Pods-ChatNaKolesah.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFEAE7C335AEABC42E599E94 /* Pods_ChatNaKolesah.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +117,8 @@
 			children = (
 				9755BC29251D2CD5008C2C51 /* ChatNaKolesah */,
 				9755BC28251D2CD5008C2C51 /* Products */,
+				B742C4527903A3BE9A6E33C9 /* Pods */,
+				CAA59D345D8776FB382456F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,7 +135,7 @@
 			children = (
 				9755BC2A251D2CD5008C2C51 /* AppDelegate.swift */,
 				9755BC2C251D2CD5008C2C51 /* SceneDelegate.swift */,
-				977D5DDD25349F5A00F43354 /* Models */,
+				97C81C32253C7B1100380DA8 /* Services */,
 				97AD86F72528DBAB00654BF6 /* Controllers */,
 				97C7F7442531DED2009300B2 /* Protocols */,
 				97AD86F42528DB7A00654BF6 /* SignIn and Auth */,
@@ -133,6 +144,7 @@
 				97AC98AF2534AD180052A6C1 /* jsons */,
 				9755BC38251D2CD9008C2C51 /* LaunchScreen.storyboard */,
 				9755BC3B251D2CD9008C2C51 /* Info.plist */,
+				97B3871A253C6B1A001F1C7C /* GoogleService-Info.plist */,
 				9755BC33251D2CD5008C2C51 /* ChatNaKolesah.xcdatamodeld */,
 			);
 			path = ChatNaKolesah;
@@ -238,6 +250,32 @@
 			path = SectionHeader;
 			sourceTree = "<group>";
 		};
+		97C81C32253C7B1100380DA8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				97C81C33253C7B4100380DA8 /* AuthService.swift */,
+				977D5DDD25349F5A00F43354 /* Models */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B742C4527903A3BE9A6E33C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DAEB09C04CCDECAAC1E80FA /* Pods-ChatNaKolesah.debug.xcconfig */,
+				AC2E7E8A76CE579DDCF28462 /* Pods-ChatNaKolesah.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CAA59D345D8776FB382456F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18984C006D2B2E2FBF50E5F2 /* Pods_ChatNaKolesah.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -245,9 +283,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9755BC3E251D2CD9008C2C51 /* Build configuration list for PBXNativeTarget "ChatNaKolesah" */;
 			buildPhases = (
+				C8C1FA63A2C8BCC05DB4B216 /* [CP] Check Pods Manifest.lock */,
 				9755BC23251D2CD5008C2C51 /* Sources */,
 				9755BC24251D2CD5008C2C51 /* Frameworks */,
 				9755BC25251D2CD5008C2C51 /* Resources */,
+				171C91A979951340EC7D0021 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -301,10 +341,53 @@
 				976E7FAF2534B50500F70B47 /* users.json in Resources */,
 				9755BC3A251D2CD9008C2C51 /* LaunchScreen.storyboard in Resources */,
 				9755BC37251D2CD9008C2C51 /* Assets.xcassets in Resources */,
+				97B3871B253C6B1B001F1C7C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		171C91A979951340EC7D0021 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatNaKolesah/Pods-ChatNaKolesah-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatNaKolesah/Pods-ChatNaKolesah-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChatNaKolesah/Pods-ChatNaKolesah-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8C1FA63A2C8BCC05DB4B216 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatNaKolesah-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9755BC23251D2CD5008C2C51 /* Sources */ = {
@@ -338,6 +421,7 @@
 				97AD86F62528DBA400654BF6 /* ListViewController.swift in Sources */,
 				97C7F7412531DCE8009300B2 /* WaitingChatCell.swift in Sources */,
 				9766D18B2538A530002BB49F /* ChatRequestViewController.swift in Sources */,
+				97C81C34253C7B4100380DA8 /* AuthService.swift in Sources */,
 				9766D18925389E82002BB49F /* UIView + Extension.swift in Sources */,
 				9755BC542523C013008C2C51 /* OneLineTextField.swift in Sources */,
 				97C7F73D2531C01B009300B2 /* ActiveChatCell.swift in Sources */,
@@ -478,6 +562,7 @@
 		};
 		9755BC3F251D2CD9008C2C51 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DAEB09C04CCDECAAC1E80FA /* Pods-ChatNaKolesah.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -496,6 +581,7 @@
 		};
 		9755BC40251D2CD9008C2C51 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC2E7E8A76CE579DDCF28462 /* Pods-ChatNaKolesah.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
