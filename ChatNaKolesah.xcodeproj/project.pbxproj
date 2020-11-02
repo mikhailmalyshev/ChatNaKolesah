@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		971C45B42550749F000CA5C2 /* UserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971C45B32550749F000CA5C2 /* UserError.swift */; };
 		973BCC60253745E700401F03 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973BCC5F253745E700401F03 /* UserCell.swift */; };
 		973BCC622537482700401F03 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973BCC612537482700401F03 /* UIViewController + Extension.swift */; };
 		9755BC2B251D2CD5008C2C51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9755BC2A251D2CD5008C2C51 /* AppDelegate.swift */; };
@@ -48,12 +49,17 @@
 		97C7F7462531E6E3009300B2 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C7F7452531E6E3009300B2 /* SectionHeader.swift */; };
 		97C7F74D2531F247009300B2 /* MUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C7F74C2531F247009300B2 /* MUser.swift */; };
 		97C81C34253C7B4100380DA8 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C81C33253C7B4100380DA8 /* AuthService.swift */; };
+		97C81C362541F3F200380DA8 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C81C352541F3F200380DA8 /* Validators.swift */; };
+		97C81C382541F61A00380DA8 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C81C372541F61A00380DA8 /* AuthError.swift */; };
+		97C81C3B254204E100380DA8 /* AuthNavigatingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C81C3A254204E100380DA8 /* AuthNavigatingDelegate.swift */; };
+		97C81C3D25506D6D00380DA8 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C81C3C25506D6D00380DA8 /* FirestoreService.swift */; };
 		CFEAE7C335AEABC42E599E94 /* Pods_ChatNaKolesah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18984C006D2B2E2FBF50E5F2 /* Pods_ChatNaKolesah.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18984C006D2B2E2FBF50E5F2 /* Pods_ChatNaKolesah.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatNaKolesah.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DAEB09C04CCDECAAC1E80FA /* Pods-ChatNaKolesah.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatNaKolesah.debug.xcconfig"; path = "Target Support Files/Pods-ChatNaKolesah/Pods-ChatNaKolesah.debug.xcconfig"; sourceTree = "<group>"; };
+		971C45B32550749F000CA5C2 /* UserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserError.swift; sourceTree = "<group>"; };
 		973BCC5F253745E700401F03 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		973BCC612537482700401F03 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
 		9755BC27251D2CD5008C2C51 /* ChatNaKolesah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatNaKolesah.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +103,10 @@
 		97C7F74A2531F140009300B2 /* waitingChats.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = waitingChats.json; sourceTree = "<group>"; };
 		97C7F74C2531F247009300B2 /* MUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUser.swift; sourceTree = "<group>"; };
 		97C81C33253C7B4100380DA8 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		97C81C352541F3F200380DA8 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		97C81C372541F61A00380DA8 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
+		97C81C3A254204E100380DA8 /* AuthNavigatingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNavigatingDelegate.swift; sourceTree = "<group>"; };
+		97C81C3C25506D6D00380DA8 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
 		AC2E7E8A76CE579DDCF28462 /* Pods-ChatNaKolesah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatNaKolesah.release.xcconfig"; path = "Target Support Files/Pods-ChatNaKolesah/Pods-ChatNaKolesah.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,9 +148,9 @@
 				97C81C32253C7B1100380DA8 /* Services */,
 				97AD86F72528DBAB00654BF6 /* Controllers */,
 				97C7F7442531DED2009300B2 /* Protocols */,
-				97AD86F42528DB7A00654BF6 /* SignIn and Auth */,
 				9755BC4C251F50C6008C2C51 /* Extensions */,
 				9755BC36251D2CD9008C2C51 /* Assets.xcassets */,
+				97C81C392541FA4400380DA8 /* Helpers */,
 				97AC98AF2534AD180052A6C1 /* jsons */,
 				9755BC38251D2CD9008C2C51 /* LaunchScreen.storyboard */,
 				9755BC3B251D2CD9008C2C51 /* Info.plist */,
@@ -213,6 +223,7 @@
 		97AD86F72528DBAB00654BF6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				97AD86F42528DB7A00654BF6 /* SignIn and Auth */,
 				97AD86F82528DC7600654BF6 /* MainTabBarController.swift */,
 				9766D18425388FE8002BB49F /* ProfileViewController.swift */,
 				97AD86F52528DBA400654BF6 /* ListViewController.swift */,
@@ -238,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				97C7F7422531DE95009300B2 /* SelfConfigurationCell.swift */,
+				97C81C3A254204E100380DA8 /* AuthNavigatingDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -254,9 +266,20 @@
 			isa = PBXGroup;
 			children = (
 				97C81C33253C7B4100380DA8 /* AuthService.swift */,
+				97C81C3C25506D6D00380DA8 /* FirestoreService.swift */,
 				977D5DDD25349F5A00F43354 /* Models */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		97C81C392541FA4400380DA8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				97C81C352541F3F200380DA8 /* Validators.swift */,
+				97C81C372541F61A00380DA8 /* AuthError.swift */,
+				971C45B32550749F000CA5C2 /* UserError.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		B742C4527903A3BE9A6E33C9 /* Pods */ = {
@@ -397,11 +420,13 @@
 				97C7F74D2531F247009300B2 /* MUser.swift in Sources */,
 				9755BC562528823C008C2C51 /* LoginViewController.swift in Sources */,
 				97C7F73F2531D610009300B2 /* GradientView.swift in Sources */,
+				971C45B42550749F000CA5C2 /* UserError.swift in Sources */,
 				9755BC46251D3864008C2C51 /* UIColor + Extension.swift in Sources */,
 				97AC98B22534ADF20052A6C1 /* Bundle + Extension.swift in Sources */,
 				9755BC44251D3786008C2C51 /* UIFont + Extension.swift in Sources */,
 				9766D18725389A5F002BB49F /* InsertableTextField.swift in Sources */,
 				9755BC5825288E24008C2C51 /* SetupProfileViewController.swift in Sources */,
+				97C81C362541F3F200380DA8 /* Validators.swift in Sources */,
 				9755BC48251F4C35008C2C51 /* Label + extension.swift in Sources */,
 				97AD86FB2528DCDC00654BF6 /* PeopleViewController.swift in Sources */,
 				9755BC50251F596E008C2C51 /* UIStackView + extension.swift in Sources */,
@@ -409,6 +434,7 @@
 				9755BC4E251F5239008C2C51 /* ButtonFromView.swift in Sources */,
 				9766D18525388FE8002BB49F /* ProfileViewController.swift in Sources */,
 				9755BC522523BCE3008C2C51 /* SignUpViewController.swift in Sources */,
+				97C81C3D25506D6D00380DA8 /* FirestoreService.swift in Sources */,
 				97C7F7462531E6E3009300B2 /* SectionHeader.swift in Sources */,
 				9755BC35251D2CD5008C2C51 /* ChatNaKolesah.xcdatamodeld in Sources */,
 				9755BC4A251F4D3F008C2C51 /* UIimageView + extenstion.swift in Sources */,
@@ -422,12 +448,14 @@
 				97C7F7412531DCE8009300B2 /* WaitingChatCell.swift in Sources */,
 				9766D18B2538A530002BB49F /* ChatRequestViewController.swift in Sources */,
 				97C81C34253C7B4100380DA8 /* AuthService.swift in Sources */,
+				97C81C382541F61A00380DA8 /* AuthError.swift in Sources */,
 				9766D18925389E82002BB49F /* UIView + Extension.swift in Sources */,
 				9755BC542523C013008C2C51 /* OneLineTextField.swift in Sources */,
 				97C7F73D2531C01B009300B2 /* ActiveChatCell.swift in Sources */,
 				9755BC2D251D2CD5008C2C51 /* SceneDelegate.swift in Sources */,
 				97AD86F325289BA000654BF6 /* SegmentedControl + Extension.swift in Sources */,
 				97C7F7432531DE95009300B2 /* SelfConfigurationCell.swift in Sources */,
+				97C81C3B254204E100380DA8 /* AuthNavigatingDelegate.swift in Sources */,
 				977D5DDC25349EA900F43354 /* MChat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

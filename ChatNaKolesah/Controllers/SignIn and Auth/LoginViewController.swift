@@ -24,13 +24,15 @@ class LoginViewController: UIViewController {
 
     let loginButton = UIButton(backgroundColor: .buttonDark(), titleColor: .white, title: "Login")
     
-    let signInButton: UIButton = {
+    let signUpButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Sign Up", for: .normal)
         button.setTitleColor(.buttonRed(), for: .normal)
         button.titleLabel?.font = .avenir20()
         return button
     }()
+    
+    weak var delegate: AuthNavigatingDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +41,7 @@ class LoginViewController: UIViewController {
         setupConstraints()
         
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
+        signUpButton.addTarget(self, action: #selector(signUpButtonTapped), for: .touchUpInside)
     }
     @objc private func loginButtonTapped() {
         print(#function)
@@ -46,10 +49,18 @@ class LoginViewController: UIViewController {
                                  password: passwordTextField.text!) { (result) in
                                     switch result {
                                     case .success(let user):
-                                        self.showAlert(with: "Успешно!", and: "Вы авторизованы")
+                                        self.showAlert(with: "Успешно!", and: "Вы авторизированы!") {
+                                            self.present(SetupProfileViewController(currentUser: user), animated: true, completion: nil)
+                                        }
                                     case .failure(let error):
                                         self.showAlert(with: "Ошибка!", and: error.localizedDescription)
                                     }
+        }
+    }
+    
+    @objc private func signUpButtonTapped() {
+        dismiss(animated: true) {
+            self.delegate?.toSignUpVC()
         }
     }
 }
@@ -67,8 +78,8 @@ extension LoginViewController {
                                     axis: .vertical,
                                     spacing: 40)
         
-        signInButton.contentHorizontalAlignment = .leading
-        let bottomStackView = UIStackView(arrangedSubViews: [needAnAccountLabel, signInButton],
+        signUpButton.contentHorizontalAlignment = .leading
+        let bottomStackView = UIStackView(arrangedSubViews: [needAnAccountLabel, signUpButton],
                                           axis: .horizontal,
                                           spacing: 10)
         bottomStackView.alignment = .firstBaseline
@@ -88,7 +99,7 @@ extension LoginViewController {
                                      stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
                                      stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40)
         ])
-        NSLayoutConstraint.activate([bottomStackView.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 50),
+        NSLayoutConstraint.activate([bottomStackView.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 20),
                                             bottomStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
                                             bottomStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40)
                ])
