@@ -2,15 +2,17 @@
 //  PeopleViewController.swift
 //  ChatNaKolesah
 //
-//  Created by Михаил Малышев on 03.10.2020.
+//  Created by Михаил Малышallow read, write: if false; to true;ев on 03.10.2020.
 //  Copyright © 2020 Mikhail Malyshev. All rights reserved.
 //
 
 import UIKit
+import FirebaseAuth
 
 class PeopleViewController: UIViewController {
     
-    let users = Bundle.main.decode([MUser].self, from: "users.json")
+//    let users = Bundle.main.decode([MUser].self, from: "users.json")
+    let users = [MUser]()
     var collectionView: UICollectionView!
     var dataSource: UICollectionViewDiffableDataSource<Section,MUser>!
     
@@ -31,6 +33,22 @@ class PeopleViewController: UIViewController {
         setupCollectionView()
         createDotaSource()
         reloadData(with: nil)
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Log Out", style: .plain, target: self, action: #selector(signOut))
+    }
+    
+    @objc private func signOut() {
+        let ac = UIAlertController(title: nil, message: "Are you sure you want to sing out?", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        ac.addAction(UIAlertAction(title: "Sing Out", style: .destructive, handler: { (_) in
+                do {
+                    try Auth.auth().signOut()
+                    UIApplication.shared.keyWindow?.rootViewController = AuthViewController()
+                } catch {
+                    print("Error singing out: \(error.localizedDescription)")
+                }
+            }))
+        present(ac, animated: true)
     }
     
     private func setupCollectionView() {
