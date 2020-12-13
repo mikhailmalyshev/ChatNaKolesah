@@ -31,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                     let mainTabBar = MainTabBarController(currentUser: muser)
                     mainTabBar.modalPresentationStyle = .fullScreen
                     self.window?.rootViewController = mainTabBar
-                case .failure(let error):
+                case .failure(_):
                     self.window?.rootViewController = AuthViewController()
                 }
             }

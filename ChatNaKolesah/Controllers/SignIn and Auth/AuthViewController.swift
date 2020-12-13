@@ -133,7 +133,7 @@ extension AuthViewController: GIDSignInDelegate {
                             mainTabBar.modalPresentationStyle = .fullScreen
                             UIApplication.getTopViewContoller()!.present(mainTabBar, animated: true, completion: nil)
                         }
-                    case .failure(let error):
+                    case .failure(_):
                         UIApplication.getTopViewContoller()!.showAlert(with: "Успешно!", and: "Вы зарегистрированы!") {
                             UIApplication.getTopViewContoller()!.present(SetupProfileViewController(currentUser: user), animated: true, completion: nil)
                         }

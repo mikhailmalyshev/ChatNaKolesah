@@ -54,6 +54,9 @@
 		97C81C3B254204E100380DA8 /* AuthNavigatingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C81C3A254204E100380DA8 /* AuthNavigatingDelegate.swift */; };
 		97C81C3D25506D6D00380DA8 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C81C3C25506D6D00380DA8 /* FirestoreService.swift */; };
 		97C9835325866D090089D311 /* UIApplication + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C9835225866D090089D311 /* UIApplication + Extension.swift */; };
+		97C98355258671090089D311 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C98354258671090089D311 /* StorageService.swift */; };
+		97C98357258674230089D311 /* UIImage + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C98356258674230089D311 /* UIImage + extension.swift */; };
+		97C983592586823B0089D311 /* ListenerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C983582586823B0089D311 /* ListenerService.swift */; };
 		CFEAE7C335AEABC42E599E94 /* Pods_ChatNaKolesah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18984C006D2B2E2FBF50E5F2 /* Pods_ChatNaKolesah.framework */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +112,9 @@
 		97C81C3A254204E100380DA8 /* AuthNavigatingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNavigatingDelegate.swift; sourceTree = "<group>"; };
 		97C81C3C25506D6D00380DA8 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
 		97C9835225866D090089D311 /* UIApplication + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication + Extension.swift"; sourceTree = "<group>"; };
+		97C98354258671090089D311 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		97C98356258674230089D311 /* UIImage + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + extension.swift"; sourceTree = "<group>"; };
+		97C983582586823B0089D311 /* ListenerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenerService.swift; sourceTree = "<group>"; };
 		AC2E7E8A76CE579DDCF28462 /* Pods-ChatNaKolesah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatNaKolesah.release.xcconfig"; path = "Target Support Files/Pods-ChatNaKolesah/Pods-ChatNaKolesah.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,6 +182,7 @@
 				9755BC41251D3483008C2C51 /* UIButton + Extension.swift */,
 				9766D18825389E82002BB49F /* UIView + Extension.swift */,
 				97C9835225866D090089D311 /* UIApplication + Extension.swift */,
+				97C98356258674230089D311 /* UIImage + extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -269,7 +276,9 @@
 			isa = PBXGroup;
 			children = (
 				97C81C33253C7B4100380DA8 /* AuthService.swift */,
+				97C983582586823B0089D311 /* ListenerService.swift */,
 				97C81C3C25506D6D00380DA8 /* FirestoreService.swift */,
+				97C98354258671090089D311 /* StorageService.swift */,
 				977D5DDD25349F5A00F43354 /* Models */,
 			);
 			path = Services;
@@ -447,10 +456,13 @@
 				9755BC44251D3786008C2C51 /* UIFont + Extension.swift in Sources */,
 				9766D18725389A5F002BB49F /* InsertableTextField.swift in Sources */,
 				9755BC5825288E24008C2C51 /* SetupProfileViewController.swift in Sources */,
+				97C98357258674230089D311 /* UIImage + extension.swift in Sources */,
 				97C81C362541F3F200380DA8 /* Validators.swift in Sources */,
+				97C983592586823B0089D311 /* ListenerService.swift in Sources */,
 				9755BC48251F4C35008C2C51 /* Label + extension.swift in Sources */,
 				97AD86FB2528DCDC00654BF6 /* PeopleViewController.swift in Sources */,
 				9755BC50251F596E008C2C51 /* UIStackView + extension.swift in Sources */,
+				97C98355258671090089D311 /* StorageService.swift in Sources */,
 				9755BC42251D3483008C2C51 /* UIButton + Extension.swift in Sources */,
 				9755BC4E251F5239008C2C51 /* ButtonFromView.swift in Sources */,
 				9766D18525388FE8002BB49F /* ProfileViewController.swift in Sources */,
