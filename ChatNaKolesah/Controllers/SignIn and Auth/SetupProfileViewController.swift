@@ -26,6 +26,12 @@ class SetupProfileViewController: UIViewController {
     init(currentUser: User) {
         self.currentUser = currentUser
         super.init(nibName: nil, bundle: nil)
+        
+        if let userName = currentUser.displayName {
+            fullNameTextField.text = userName
+        }
+        
+//        todo set google image
     }
     
     required init?(coder: NSCoder) {
@@ -52,7 +58,9 @@ class SetupProfileViewController: UIViewController {
                                                     switch result {
                                                     case .success(let muser):
                                                         self.showAlert(with: "Успешно!", and: "Приятного общения!", completion: {
-                                                            self.present(MainTabBarController(), animated: true, completion: nil)
+                                                            let mainTabBar = MainTabBarController(currentUser: muser)
+                                                            mainTabBar.modalPresentationStyle = .fullScreen
+                                                            self.present(mainTabBar, animated: true, completion: nil)
                                                         })
                                                         print(muser)
                                                     case .failure(let error):

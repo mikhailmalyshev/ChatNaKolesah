@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleSignIn
 
 class LoginViewController: UIViewController {
     
@@ -42,6 +43,7 @@ class LoginViewController: UIViewController {
         
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
         signUpButton.addTarget(self, action: #selector(signUpButtonTapped), for: .touchUpInside)
+        googleButton.addTarget(self, action: #selector(googleButtonTapped), for: .touchUpInside)
     }
     @objc private func loginButtonTapped() {
         print(#function)
@@ -52,8 +54,10 @@ class LoginViewController: UIViewController {
                                         self.showAlert(with: "Успешно!", and: "Вы авторизированы!") {
                                             FirestoreService.shared.getUserData(user: user) { (result) in
                                                 switch result {
-                                                case .success(let user):
-                                                    self.present(MainTabBarController(), animated: true, completion: nil)
+                                                case .success(let muser):
+                                                    let mainTabBar = MainTabBarController(currentUser: muser)
+                                                    mainTabBar.modalPresentationStyle = .fullScreen
+                                                    self.present(mainTabBar, animated: true, completion: nil)
                                                 case .failure(let error):
                                                     self.present(SetupProfileViewController(currentUser: user), animated: true, completion: nil)
                                                 }
@@ -69,6 +73,11 @@ class LoginViewController: UIViewController {
         dismiss(animated: true) {
             self.delegate?.toSignUpVC()
         }
+    }
+    
+    @objc private func googleButtonTapped() {
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        GIDSignIn.sharedInstance().signIn()
     }
 }
 
@@ -99,10 +108,10 @@ extension LoginViewController {
         view.addSubview(stackView)
         view.addSubview(bottomStackView)
         
-        NSLayoutConstraint.activate([welcomeLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 160),
+        NSLayoutConstraint.activate([welcomeLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
                                      welcomeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
-        NSLayoutConstraint.activate([stackView.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 100),
+        NSLayoutConstraint.activate([stackView.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 60),
                                      stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
                                      stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40)
         ])

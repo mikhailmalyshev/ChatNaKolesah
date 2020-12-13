@@ -53,6 +53,7 @@
 		97C81C382541F61A00380DA8 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C81C372541F61A00380DA8 /* AuthError.swift */; };
 		97C81C3B254204E100380DA8 /* AuthNavigatingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C81C3A254204E100380DA8 /* AuthNavigatingDelegate.swift */; };
 		97C81C3D25506D6D00380DA8 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C81C3C25506D6D00380DA8 /* FirestoreService.swift */; };
+		97C9835325866D090089D311 /* UIApplication + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C9835225866D090089D311 /* UIApplication + Extension.swift */; };
 		CFEAE7C335AEABC42E599E94 /* Pods_ChatNaKolesah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18984C006D2B2E2FBF50E5F2 /* Pods_ChatNaKolesah.framework */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +108,7 @@
 		97C81C372541F61A00380DA8 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
 		97C81C3A254204E100380DA8 /* AuthNavigatingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNavigatingDelegate.swift; sourceTree = "<group>"; };
 		97C81C3C25506D6D00380DA8 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		97C9835225866D090089D311 /* UIApplication + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication + Extension.swift"; sourceTree = "<group>"; };
 		AC2E7E8A76CE579DDCF28462 /* Pods-ChatNaKolesah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatNaKolesah.release.xcconfig"; path = "Target Support Files/Pods-ChatNaKolesah/Pods-ChatNaKolesah.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,6 +175,7 @@
 				9755BC43251D3786008C2C51 /* UIFont + Extension.swift */,
 				9755BC41251D3483008C2C51 /* UIButton + Extension.swift */,
 				9766D18825389E82002BB49F /* UIView + Extension.swift */,
+				97C9835225866D090089D311 /* UIApplication + Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				9755BC24251D2CD5008C2C51 /* Frameworks */,
 				9755BC25251D2CD5008C2C51 /* Resources */,
 				171C91A979951340EC7D0021 /* [CP] Embed Pods Frameworks */,
+				A782BF7BBA59B49FF90E2E62 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -388,6 +392,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChatNaKolesah/Pods-ChatNaKolesah-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A782BF7BBA59B49FF90E2E62 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatNaKolesah/Pods-ChatNaKolesah-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatNaKolesah/Pods-ChatNaKolesah-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChatNaKolesah/Pods-ChatNaKolesah-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C8C1FA63A2C8BCC05DB4B216 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -434,6 +455,7 @@
 				9755BC4E251F5239008C2C51 /* ButtonFromView.swift in Sources */,
 				9766D18525388FE8002BB49F /* ProfileViewController.swift in Sources */,
 				9755BC522523BCE3008C2C51 /* SignUpViewController.swift in Sources */,
+				97C9835325866D090089D311 /* UIApplication + Extension.swift in Sources */,
 				97C81C3D25506D6D00380DA8 /* FirestoreService.swift in Sources */,
 				97C7F7462531E6E3009300B2 /* SectionHeader.swift in Sources */,
 				9755BC35251D2CD5008C2C51 /* ChatNaKolesah.xcdatamodeld in Sources */,
