@@ -57,6 +57,7 @@
 		97C98355258671090089D311 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C98354258671090089D311 /* StorageService.swift */; };
 		97C98357258674230089D311 /* UIImage + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C98356258674230089D311 /* UIImage + extension.swift */; };
 		97C983592586823B0089D311 /* ListenerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C983582586823B0089D311 /* ListenerService.swift */; };
+		97C9835B258932FC0089D311 /* MMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C9835A258932FC0089D311 /* MMessage.swift */; };
 		CFEAE7C335AEABC42E599E94 /* Pods_ChatNaKolesah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18984C006D2B2E2FBF50E5F2 /* Pods_ChatNaKolesah.framework */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +116,7 @@
 		97C98354258671090089D311 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		97C98356258674230089D311 /* UIImage + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + extension.swift"; sourceTree = "<group>"; };
 		97C983582586823B0089D311 /* ListenerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenerService.swift; sourceTree = "<group>"; };
+		97C9835A258932FC0089D311 /* MMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMessage.swift; sourceTree = "<group>"; };
 		AC2E7E8A76CE579DDCF28462 /* Pods-ChatNaKolesah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatNaKolesah.release.xcconfig"; path = "Target Support Files/Pods-ChatNaKolesah/Pods-ChatNaKolesah.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				97C7F74C2531F247009300B2 /* MUser.swift */,
+				97C9835A258932FC0089D311 /* MMessage.swift */,
 				977D5DDB25349EA900F43354 /* MChat.swift */,
 			);
 			path = Models;
@@ -479,6 +482,7 @@
 				97AD86F92528DC7600654BF6 /* MainTabBarController.swift in Sources */,
 				9755BC2B251D2CD5008C2C51 /* AppDelegate.swift in Sources */,
 				97AD86F62528DBA400654BF6 /* ListViewController.swift in Sources */,
+				97C9835B258932FC0089D311 /* MMessage.swift in Sources */,
 				97C7F7412531DCE8009300B2 /* WaitingChatCell.swift in Sources */,
 				9766D18B2538A530002BB49F /* ChatRequestViewController.swift in Sources */,
 				97C81C34253C7B4100380DA8 /* AuthService.swift in Sources */,
