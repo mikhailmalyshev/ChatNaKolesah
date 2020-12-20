@@ -59,10 +59,10 @@ class ProfileViewController: UIViewController {
         guard let message = myTextField.text, message != "" else { return }
         
         self.dismiss(animated: true) {
-            FirestoreService.shared.createWaitingChat(message: message, receiver: user) { (result) in
+            FirestoreService.shared.createWaitingChat(message: message, receiver: self.user) { (result) in
                 switch result {
                 case .success:
-                    UIApplication.getTopViewContoller()?.showAlert(with: "Успешно!", and: "Ваше сообщение для объекта \(user.username) было отправлено")
+                    UIApplication.getTopViewContoller()?.showAlert(with: "Успешно!", and: "Ваше сообщение для объекта \(self.user.username) было отправлено")
                 case .failure(let error):
                     UIApplication.getTopViewContoller()?.showAlert(with: "Ошибка!", and: error.localizedDescription)
                 }
