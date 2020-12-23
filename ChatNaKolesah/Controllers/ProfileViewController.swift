@@ -67,7 +67,6 @@ class ProfileViewController: UIViewController {
                     UIApplication.getTopViewContoller()?.showAlert(with: "Ошибка!", and: error.localizedDescription)
                 }
             }
-            UIApplication.getTopViewContoller()?.showAlert(with: "Test", and: "111")
         }
     }
     
